@@ -14,18 +14,20 @@ body {
 
 .header h2 {
     font-size: 1.3rem;
-    color: rgba(255, 255, 255, 0.878);
-    font-weight: 700;
+    color: rgba(255, 255, 255, 0.87);
+    font-weight: 750;
     margin: 0;
     padding: 0;
 }
 
 .header p{
-    color: rgba(255, 255, 255, 0.468);
-    font-size: 0.6rem;
+    color: rgba(226, 225, 225, 0.712);
+    font-size: 0.65rem;
+    font-weight: 600;
     margin: 0;
     padding: 0;
     text-transform: capitalize;
+    letter-spacing: 1.3px;
 }
 
 .header div:nth-child(2){
@@ -147,13 +149,16 @@ body {
     justify-content: space-between;
     color: rgba(255, 255, 255, 0.353);
     font-size: 0.7rem;
+    width: 100%;
 }
 
 .card_ div span {
     font-size: 1.8rem;
     color: white;
 }
-
+.sub {
+    letter-spacing: 4px;
+}
 .pic {
     height: 4px;
     align-self: flex-end;
@@ -170,7 +175,6 @@ body {
 
 .btn {
     width: 2.6rem;
-    /* border: 1px solid red; */
     border-radius: 18px;
     background-image: linear-gradient(
         hsl(210, 78%, 56%),
@@ -188,3 +192,50 @@ body {
     margin: 2px;
 }
 
+@media (max-width: 800px) {
+    .card_ {
+        width: 85%;
+    }
+    .card {
+        width: 85%;
+    }
+    .main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 98%;
+    }
+    .header {
+        flex-direction: column;
+        width: 85%;
+        align-items: flex-start;
+        margin: auto;
+        padding: 1rem;
+    }
+    .header h2{
+        padding-bottom: 2px;
+    }
+    .h {
+        border-bottom: 0.1px solid rgba(211, 211, 211, 0.2);
+        padding-bottom: 13px;
+        width: 100%;
+    }
+    .Dark {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 8px;
+        align-items: center;
+    }
+    .overview {
+        justify-content: flex-start;
+        width: 85%;
+        margin: auto;
+        padding: 1rem;
+    }
+    .stat_cards {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+}

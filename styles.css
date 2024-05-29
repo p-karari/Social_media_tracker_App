@@ -1,6 +1,15 @@
+:root {
+    --Very-Dark-Blue : hsl(230, 17%, 14%);
+    --Very-Dark-Blue-top : hsl(232, 19%, 15%);
+    --Dark-Desaturated-Blue : hsl(228, 28%, 20%);
+    --Desaturated-Blue : hsl(228, 34%, 66%);
+    --White-text: hsl(0, 0%, 100%);
+    --grayish-text: rgba(226, 225, 225, 0.712);
+}
+
 body {
-    background-color: hsl(230, 17%, 14%);
-    color: white;
+    background-color: var(--Very-Dark-Blue);
+    color: var(--White-text);
     font-family:'Inter', sans-serif;
     box-sizing: border-box;
 }
@@ -10,11 +19,13 @@ body {
     align-items: center;
     justify-content: space-between;
     margin: 20px auto;
+    /* color: rgba(0, 0, 0, 0.661); */
 }
 
 .header h2 {
     font-size: 1.3rem;
     color: rgba(255, 255, 255, 0.87);
+    color: var(--White-text);
     font-weight: 750;
     margin: 0;
     padding: 0;
@@ -22,6 +33,7 @@ body {
 
 .header p{
     color: rgba(226, 225, 225, 0.712);
+    color: var(--grayish-text);
     font-size: 0.65rem;
     font-weight: 600;
     margin: 0;
@@ -34,7 +46,8 @@ body {
     display: flex;
     gap: 10px;
     font-size: 0.6rem;
-    color: rgba(255, 255, 255, 0.442);
+    /* color: rgba(255, 255, 255, 0.442); */
+    color: var(--grayish-text);
     align-items: center;
 }
 
@@ -62,7 +75,7 @@ body {
     padding: 1.1rem;
     gap: 8px;
     width: 10rem;
-    background-color: hsl(228, 28%, 20%);
+    background-color: var(--Dark-Desaturated-Blue);
     border-radius: 8px;
     line-height: 0.5;
 }
@@ -75,7 +88,9 @@ body {
     
 }
 .card div p{
-    color: rgba(255, 255, 255, 0.419);
+    /* color: rgba(255, 255, 255, 0.419); */
+    color: var(--grayish-text);
+    /* color: var(--White-text); */
     text-transform: none;
     font-size: 0.65rem;
 }
@@ -88,7 +103,9 @@ body {
 .card p{
     margin: 0;
     padding: 0;
-    color: rgba(255, 255, 255, 0.239);
+    /* color: rgba(255, 255, 255, 0.239); */
+    /* color: var(--White-text); */
+    color: var(--grayish-text);
     text-transform: uppercase;
     font-size: 0.5rem;
 }
@@ -126,7 +143,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    background-color: hsl(228, 28%, 20%);
+    background-color: var(--Dark-Desaturated-Blue);
 }
 
 .stat_cards {
@@ -147,14 +164,16 @@ body {
 .card_ div{
     display: flex;
     justify-content: space-between;
-    color: rgba(255, 255, 255, 0.353);
+    /* color: rgba(255, 255, 255, 0.353); */
+    /* color: var(--White-text); */
+    color: var(--grayish-text);
     font-size: 0.7rem;
     width: 100%;
 }
 
 .card_ div span {
     font-size: 1.8rem;
-    color: white;
+    color: var(--White-text);
 }
 .sub {
     letter-spacing: 4px;
@@ -173,7 +192,7 @@ body {
     height: 14px;
 }
 
-.btn {
+#btn {
     width: 2.6rem;
     border-radius: 18px;
     background-image: linear-gradient(
@@ -181,15 +200,24 @@ body {
          hsl(146, 68%, 55%)
          );
 }
+#btn button:hover {
+    cursor: pointer;
+}
 
-.btn button {
+#btn button {
     width: 15px;
     height: 15px;
     border-radius: 50%;
     border: none;
-    background-color: hsl(230, 17%, 14%);
-    text-align: center;
+    background-color: var(--Very-Dark-Blue);
+
     margin: 2px;
+    
+}
+
+.percent {
+    display: flex;
+    justify-content: center;
 }
 
 @media (max-width: 800px) {

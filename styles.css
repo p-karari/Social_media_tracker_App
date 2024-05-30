@@ -5,6 +5,7 @@
     --Desaturated-Blue : hsl(228, 34%, 66%);
     --White-text: hsl(0, 0%, 100%);
     --grayish-text: rgba(226, 225, 225, 0.712);
+    --on-hover: hsl(228, 12%, 44%);
 }
 
 body {
@@ -19,7 +20,6 @@ body {
     align-items: center;
     justify-content: space-between;
     margin: 20px auto;
-    /* color: rgba(0, 0, 0, 0.661); */
 }
 
 .header h2 {
@@ -46,7 +46,6 @@ body {
     display: flex;
     gap: 10px;
     font-size: 0.6rem;
-    /* color: rgba(255, 255, 255, 0.442); */
     color: var(--grayish-text);
     align-items: center;
 }
@@ -88,9 +87,7 @@ body {
     
 }
 .card div p{
-    /* color: rgba(255, 255, 255, 0.419); */
     color: var(--grayish-text);
-    /* color: var(--White-text); */
     text-transform: none;
     font-size: 0.65rem;
 }
@@ -103,8 +100,6 @@ body {
 .card p{
     margin: 0;
     padding: 0;
-    /* color: rgba(255, 255, 255, 0.239); */
-    /* color: var(--White-text); */
     color: var(--grayish-text);
     text-transform: uppercase;
     font-size: 0.5rem;
@@ -164,8 +159,6 @@ body {
 .card_ div{
     display: flex;
     justify-content: space-between;
-    /* color: rgba(255, 255, 255, 0.353); */
-    /* color: var(--White-text); */
     color: var(--grayish-text);
     font-size: 0.7rem;
     width: 100%;
@@ -218,6 +211,14 @@ body {
 .percent {
     display: flex;
     justify-content: center;
+}
+.card:hover {
+    cursor: pointer;
+    background-color: var(--on-hover);
+}
+.card_:hover{
+    cursor: pointer;
+    background-color: var(--on-hover);
 }
 
 @media (max-width: 800px) {
